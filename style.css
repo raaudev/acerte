@@ -373,6 +373,16 @@ footer .line-footer p{
     text-align: center;
 }
 
+.line-footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.line-footer a:hover {
+    text-decoration: underline;
+    color: #007bff;
+}
+
 /* responsivo */
 
 @media screen and (max-width: 1020px){
