@@ -152,7 +152,7 @@ section.topo-do-site .flex{
 /* ESTILO SERVICOS */
 
 section.servicos{
-    padding: 80px 4%;
+    padding: 100px 4%;
 }
 
 section.servicos .flex{
@@ -184,7 +184,7 @@ section.servicos .flex{
 
 /* ESTILO SOBRE */
 section.sobre{
-    padding: 80px 4%;
+    padding: 100px 4%;
 }
 
 section.sobre img{
@@ -226,7 +226,7 @@ section.sobre .flex{
 /* ESTILO CLIENTES */
 
 section.clientes {
-  padding: 80px 4%;
+  padding: 100px 4%;
 }
 
 section.clientes .flex {
@@ -294,7 +294,7 @@ section.clientes .swiper-pagination-bullet-active {
 /* ESTILO CONTATO */
 
 section#contato{
-    padding: 80px 4%;
+    padding: 100px 4%;
 }
 
 form{
