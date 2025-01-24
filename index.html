@@ -221,12 +221,11 @@
 </script>
 
 <script src="main.js"></script>
-<script src="form.js"></script>
 
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
     (function() {
-        emailjs.init("4eGQPGBcuDJXpauvo"); // Substitua pela sua Public Key
+        emailjs.init("jyDe_g_zTovR6_AeA"); // Substitua pela sua Public Key
     })();
 
     document.getElementById("contactForm").addEventListener("submit", function(event) {
@@ -247,7 +246,7 @@
         };
 
         // Envia o e-mail através do EmailJS
-        emailjs.send('service_l9b58ii', 'template_ydsscui', templateParams)
+        emailjs.send('service_njjly8g', 'template_hj2v8ck', templateParams)
             .then(function(response) {
                 console.log('E-mail enviado com sucesso', response);
                 alert("Consulta enviada com sucesso!");
