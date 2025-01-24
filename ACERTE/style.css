@@ -1,0 +1,577 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #fff;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #a52a2a;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    color: #fff;
+}
+
+button:hover{
+    box-shadow: 0px 0px 8px #FF0000;
+    transform: scale(1.05);
+}
+
+h2.titulo{
+    color: #000;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #a52a2a;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #a52a2a;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+
+/* ESTILO DO CABEÇALHO */
+
+header{
+    padding: 30px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 300PX;
+    height: auto;
+}
+
+header a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #a52a2a;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+/* ESTILO DO TOPO DO SITE */
+
+section.topo-do-site{
+    padding: 100px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #000;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #a52a2a;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #000;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    width: 300px;
+    height: auto;
+}
+
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESTILO SOBRE */
+section.sobre{
+    padding: 100px 4%;
+}
+
+section.sobre img{
+    width: 275px;
+    height: auto;
+    border-radius: 20px;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #000;
+    
+}
+
+.sobre .txt-sobre h2{
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 25px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #a52a2a;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 15px 0;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.sobre .txt-sobre p span{
+    color: #a52a2a;
+}
+
+/* CLIENTES */
+
+/* Estilo do título */
+.titulo-clientes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+  
+  .titulo-clientes h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #652525;
+    margin: 0;
+  }
+  
+  /* Container do carrossel */
+  .clientes-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 80vh;
+    max-width: 600px;
+    height: 800px; /* Altura fixa */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  /* Cada item do carrossel */
+  .cliente {
+    flex: 0 0 100%;
+    opacity: 0;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cliente.ativo {
+    display: flex;
+    opacity: 1;
+  }
+  
+  /* Imagens */
+  .cliente img {
+    max-width: 80%;
+    max-height: 60%;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  
+  /* Vídeos */
+  .cliente video {
+    max-width: 80%;
+    max-height: 60%;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+  
+  /* Navegação */
+  
+.navega {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navega button {
+    background: #652525;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.navega button:hover {
+    background: #4a1c1c;
+}
+
+
+/*FALE CONOSCO*/
+
+/FALE CONOSCO/
+
+section#contato{
+    padding: 80px 4%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; /* Limita a largura do formulário */
+    margin: 0 auto; /* Centraliza o formulário na tela */
+    padding: 20px;
+}
+
+/* Estilo geral para os campos */
+form input,
+form select,
+form textarea {
+    width: 100%;
+    background-color: #242424;
+    border: none;
+    outline: none;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px; /* Para dar espaço entre os campos */
+}
+
+/* Estilo específico para o botão de envio */
+form .btn-enviar input {
+    width: 100%;
+    background-color: #a52a2a;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 15px 60px;
+    border-radius: 15px;
+    border: none;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+form .btn-enviar input:hover {
+    background-color: #a52a2a; /* Altera a cor ao passar o mouse */
+}
+
+/* Estilo para o campo de categoria (select) */
+form select {
+    display: block;
+    width: 100%;
+    background-color: #242424;
+    border: none;
+    outline: none;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px; /* Para dar espaço entre os campos */
+}
+
+/* Estilo do modal */
+.modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-conteudo {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.modal-conteudo input,
+.modal-conteudo textarea,
+.modal-conteudo select {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Estilo para o botão dentro do modal */
+.modal-conteudo .btn-enviar input {
+    background-color: #a52a2a;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Estilo do botão de envio */
+.formulario .btn-enviar input {
+    background-color: #a52a2a;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* Estilo para o modal */
+.modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-conteudo {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.modal-conteudo input,
+.modal-conteudo textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.modal-conteudo .btn-enviar input {
+    background-color: #a52a2a;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Estilo do rodapé */
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.10);
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .logo-footer {
+    color: #000;
+}
+
+.borda{
+    border-top: 2px solid #a52a2a;
+}
+
+footer .logo-footer > h2{
+    font-size: 1.5rem;
+}
+
+footer .logo-footer > h2 > span {
+    color: #a52a2a;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+footer .line-footer p{
+    color: #000;
+    text-align: center;
+}
+
+.line-footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.line-footer a:hover {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+/* responsivo */
+
+@media screen and (max-width: 1020px){
+    /* Classes gerais */
+    .flex{
+        flex-direction: column;
+    }
+    
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+    
+    h2.titulo{
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+    
+    /* topo do site */
+    section.topo-do-site .flex{
+        gap: 40px;
+    }
+    
+    section.topo-do-site{
+    padding: 20px 8%;
+}
+       
+    .topo-do-site h1{
+        font-size: 30px;
+}   
+    
+    .topo-do-site .img-topo-site img{
+        width: 100%;
+}
+
+    /* nossos serviços */
+    section.servicos{
+        padding: 40px 8% ;
+    }
+    
+    /* sobre */
+    section.sobre{
+        padding: 80px 8%;
+    }
+    
+    .sobre .txt-sobre h2{
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+    
+    .btn-social{
+        text-align: center;
+    }
+    
+    /* depoimentos / clientes */
+    section.clientes{
+        padding: 80px 8%;
+    }
+    
+    /* rodapé */
+    
+    .logo-footer{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+        
+    
+}
