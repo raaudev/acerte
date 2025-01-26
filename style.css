@@ -417,11 +417,6 @@ section.sobre h2 {
     .cliente-texto p {
       font-size: 0.85rem;
     }
-  
-    .cliente-imagem img,
-    .cliente-imagem video {
-      height: 150px;
-    }
   }
 
 /* Estilo Servicos */
